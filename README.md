@@ -14,8 +14,10 @@ Modern UI Framework: Built using HTML5, CSS3, and the Bulma CSS Framework
 Dynamic Data Fetching: Utilizes the JavaScript Fetch API with async/await patterns
 
 ## Video demonstration user interface:
+https://youtu.be/21CfzE36LqE
 
 ## Video demonstration admin interface:
+https://youtu.be/6GuQp8tNBR8
 
 
 
