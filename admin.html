@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> HelpDecorah </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" href="/BetterBlock/files/badge.png">
+        <link rel="stylesheet" href="/BetterBlock/style/site.css">
+        <script src="https://kit.fontawesome.com/541b6877f4.js" crossorigin="anonymous"></script>
+    </head>
+    <body> 
+        <main>
+            <section class="container admins-page">
+                <div class="left">
+                    <div class="admin-navigation">
+                        <a href="jobs.html" class="back-link"><i class="fa-solid fa-arrow-left"></i> Home </a>
+                        <a href="users.html"><i class="fa-solid fa-user"></i>   Users Management </a>
+                    </div>
+                    <div id="adminsContainer">
+                        <div class="admin-card">
+                            <div class="admin-header">
+                                <h2 class="admin-title">Generate Task</h2>
+                            </div>
+                            <div class="admin-body">
+                                <form id="adminForm">         
+                                    <div class="form-group">
+                                        <label>Task</label>
+                                        <input id="title" class="input" type="text" name="task_admin" placeholder="Task">
+                                        <p id="alertEmptyTask">Task field is required</p>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label>Organization</label>
+                                        <input id="organization" class="input" type="text" name="organization_admin" placeholder="Organization">
+                                        <p id="alertEmptyOrganization">Organization field is required</p>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label>Location</label>
+                                        <input id="location" class="input" type="text" name="location_admin" placeholder="Location">
+                                        <p id="alertEmptyLocation">Location field is required</p>
+                                    </div>
+
+                                    <div class="field">
+                                        <label>Features</label>
+                                        <div class="select is-fullwidth">
+                                            <select id="voluntary" name="voluntary_admin">
+                                                <option>In-person</option>
+                                                <option>Virtual</option>
+                                                <option>Temporary</option>
+                                                <option>Ongoing</option>
+                                                <option>Project-based</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="field">
+                                        <label>Age group</label>
+                                        <div class="select is-fullwidth">
+                                            <select id="age" name="age_admin">
+                                                <option>All ages</option>
+                                                <option>Children</option>
+                                                <option>Teens</option>
+                                                <option>Adults</option>
+                                                <option>Seniors</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label>Description</label>
+                                        <textarea id="description" class="textarea" name="description_admin" placeholder="Add a description..."></textarea>
+                                    </div>
+
+                                    <div class="admin-footer">
+                                        <button id="submit-task-btn" class="apply-btn" type="button" onclick="addTask()">Create</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div id="datesContainer">
+                        <div class="date-card">
+                            <div class="date-header">
+                                <h2 class="date-title">Add Date</h2>
+                            </div>
+                            <div class="date-body">
+                                <form id="dateForm">     
+                                    <div class="form-group">
+                                        <label>Date</label>
+                                        <input id="date" class="input" type="date" name="date_date" required>
+                                        <p id="alertEmptyDate">Date field is required</p>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label>Time</label>
+                                        <input id="time" class="input" type="time" name="time_date" required>
+                                        <p id="alertEmptyTime">Time field is required</p>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="Tasks-edition">
+                <div class="tasks-head-title">
+                    <h2 class="admin-title">All Tasks</h2>
+                </div>
+                <div id="tasksContainer"></div>
+            </section>
+        </main>
+        <script src="/BetterBlock/js/script.js"></script>
+    </body>
+</html>
